@@ -12,6 +12,7 @@ if (arquivoDeConfiguracao) {
             configuracaoCarregada = false;
     }
 }
+
 const obrigatorias = ['PORT', 'NOME_ALUNO', 'TURMA'];
 const ausentes = []; 
 
@@ -25,6 +26,7 @@ for (const nome of obrigatorias) {
 if (configuracaoCarregada && ausentes.length > 0) {
     console.error(`Configure no .env: ${ausentes.join(',')}`);
         process.exitCode = 1;
+
     } else if (configuracaoCarregada) {
         console.table({
             estudante: process.env.NOME_ALUNO,
@@ -37,4 +39,5 @@ if (configuracaoCarregada && ausentes.length > 0) {
             portaConfigurada: process.env.PORT
         });
         console.log('ambiente configurada com sucesso!');
+
 }
