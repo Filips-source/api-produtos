@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nome": "Teclado Magnetico | Akko Fun60 Pro",
+    "preco": 180,
+    "estoque": 0,
+    "categoria": "teclado"
+  },
+  {
+    "id": 2,
+    "nome": "Mouse Super ligth 2",
+    "preco": 799,
+    "estoque": 8,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 3,
+    "nome": "Mouse Pad Tation",
+    "preco": 70,
+    "estoque": 100,
+    "categoria": "Periféricos"
+  }
+]
