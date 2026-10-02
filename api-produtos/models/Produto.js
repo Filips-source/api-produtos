@@ -8,7 +8,7 @@ export default class Produto{
         if(typeof nome !== 'string' || nome.trim() === '') {
             throw new TypeError('Nome é obrigatorio');
         }
-        if(!Number.isInteger(preco) || preco < 0) {
+        if(!Number.isFinite(preco) || preco < 0) {
             throw new TypeError('Preço Inválido');
         }
         if(!Number.isInteger(estoque) || estoque < 0 || !Number.isFinite(estoque)) {
